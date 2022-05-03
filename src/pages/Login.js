@@ -2,7 +2,11 @@ import React from 'react'
 
 function Login() {
   return (
-    <p>Hello from login</p>
+    <form>
+      <label htmlFor="name">
+        <input id="name" placeholder="Write your name"/>
+      </label>
+    </form>
   )
 }
 
