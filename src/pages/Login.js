@@ -6,6 +6,7 @@ function Login() {
       <label htmlFor="name">
         <input id="name" placeholder="Write your name"/>
       </label>
+      <button>Login</button>
     </form>
   )
 }
