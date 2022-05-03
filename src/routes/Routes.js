@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from '../pages/Login';
 import Search from '../pages/Search';
 import Album from '../pages/Album';
@@ -11,7 +11,6 @@ import NotFound from '../pages/NotFound';
 function AppRoutes() {
   return (
     <Routes>
-      <Switch>
         <Route path='/' element={<Login />} />
         <Route path='/search' element={<Search />} />
         <Route path='/album:id' element={<Album />} />
@@ -19,7 +18,6 @@ function AppRoutes() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/profile/edit' element={<ProfileEdit />} />
         <Route path='*' element={<NotFound />} />
-      </Switch>
     </Routes>
   )
 }
